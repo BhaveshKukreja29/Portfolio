@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh Kukreja - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Bhavesh_Kukreja.pdf" download>Résumé</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="intro-content">
+                <h1>Bhavesh Kukreja</h1>
+                <h2>Computer Engineering Student & Full-Stack Developer</h2>
+                <p>I've always been curious about how things work behind the scenes. 
+                    For me, it's not enough to just use a piece of software, 
+                    I want to know what makes it tick. This curiosity has led me
+                    to explore everything from the source code of Python to the protocols 
+                    that make real-time communication possible. It's this passion for
+                    understanding the fundamentals that drives me to build efficient and scalable
+                    applications.
+                </p>
+                <div class="social-links">
+                    <a href="mailto:bhaveshkukreja29@gmail.com" aria-label="Mail"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/bhavesh-kukreja29/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/BhaveshKukreja29" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/bhavesh_kukreja" aria-label="LeetCode" target="_blank"><img src="leetcode.svg" class="svg-icon" alt="LeetCode"></a>
+                </div>
+            </div>
+            
+            <div class="intro-image">
+                <img src="bhavesh.jpg" alt="Bhavesh Kukreja" class="profile-photo">
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <div class="project-description">
+                    <h3>Rexus <a href="https://github.com/BhaveshKukreja29/rexus" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+                    <p class="tech-stack">FastAPI, React, Redis, PostgreSQL, Docker</p>
+                    <ul>
+                        <li>Developed a FastAPI API Gateway with key authentication, response caching, and rate limiting.</li>
+                        <li>Implemented a Redis-based sliding window rate limiter and high-speed cache to reduce API latency.</li>
+                        <li>Built a non-blocking, asynchronous logging system using a Redis buffer and background worker.</li>
+                        <li>Designed a real-time analytics dashboard using React and WebSockets to display live metrics.</li>
+                    </ul>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Q2JqmPYL_RE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-description">
+                    <h3>King's Gambit <a href="https://github.com/BhaveshKukreja29/KingsGambit" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+                    <p class="tech-stack">React, Django, WebRTC, Docker, PostgreSQL, Redis</p>
+                    <ul>
+                        <li>Developed a full-stack real-time chess platform with a React frontend and Django backend.</li>
+                        <li>Implemented WebSocket-based gameplay using Django Channels with Redis for message brokering.</li>
+                        <li>Integrated WebRTC video calling via PeerJS for peer-to-peer communication, reducing server bandwidth.</li>
+                    </ul>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/BYTizdoNZ0M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-description">
+                    <h3>PaperPal <a href="https://github.com/BhaveshKukreja29/paperpal" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+                    <p class="tech-stack">Python, Gemini API</p>
+                    <ul>
+                        <li>Built a CLI research assistant with multi-format document processing (PDF, DOCX, TXT).</li>
+                        <li>Integrated Gemini API for AI-powered document summarization and interactive Q&A capabilities.</li>
+                        <li>Implemented error handling and optimized text parsing using various Python libraries.</li>
+                    </ul>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/8gvPNIu5Vyc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <h3>How Do Lists Really Work in Python?</h3>
+                    <p>An analysis of the CPython source code to explain how Python lists are implemented as dynamic arrays. The article covers memory allocation strategies, the O(1) amortized time complexity of append operations, and how resizing is handled internally.</p>
+                    <a href="https://dev.to/bhavesh_kukreja/how-do-lists-really-work-in-python-4cmn" target="_blank">Read Article &rarr;</a>
+                </div>
+                <div class="blog-post">
+                    <h3>A Deep Dive into Python Dictionaries</h3>
+                    <p>This post explores the hash table data structure that powers Python dictionaries. It details the process of hashing, collision resolution using open addressing, and the internal P-Table array that has allowed dictionaries since Python 3.6 to be memory-efficient and preserve insertion order.</p>
+                    <a href="https://dev.to/bhavesh_kukreja/a-deep-dive-into-python-dictionaries-4758" target="_blank">Read Article &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Python, C, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <p>FastAPI, Django, Flask, Django Channels</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <p>React, HTML, CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, SQLite, Redis, Alembic</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <p>Docker, Git, WebRTC, PeerJS, Vite</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
