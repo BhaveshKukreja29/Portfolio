@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavesh Kukreja - Portfolio</title>
+    <meta name="description" content="Bhavesh Kukreja – Backend Engineer, CS Undergrad, open-source contributor.">
+    <meta property="og:title" content="Bhavesh Kukreja – Portfolio">
+    <meta property="og:description" content="Backend Engineer, CS Undergrad, open-source contributor.">
+    <meta property="og:image" content="bhavesh.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="3532b18d-3306-46c2-92e6-66462a6f1292"></script>
@@ -13,7 +18,8 @@
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="Bhavesh_Kukreja.pdf" download>Résumé</a></li>
+                <li><a href="Bhavesh_Kukreja_Resume.pdf" download>Résumé</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -46,6 +52,25 @@
                 <img src="bhavesh.jpg" alt="Bhavesh Kukreja" class="profile-photo">
             </div>
         </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Backend Engineering Intern (Python)</h3>
+                    <span class="experience-date">December 2025 – February 2026</span>
+                </div>
+                <p class="experience-company">Zobyt · Remote</p>
+                <ul>
+                    <li>Built a newsletter scheduling API in FastAPI with recurring tasks, user rate limits, and error rollback.</li>
+                    <li>Reduced a data-sync script's runtime from 45 minutes to 4 by fixing N+1 API calls with metadata pre-fetching.</li>
+                    <li>Resolved a PostgreSQL connection leak by refactoring the application's database session handling.</li>
+                    <li>Fixed a scheduler bug bypassing rate limits by correcting a data model serialization error.</li>
+                    <li>Improved CI/CD stability by refactoring flaky tests with deterministic database queries in the Pytest suite.</li>
+                </ul>
+            </div>
+        </section>
+
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-item">
@@ -54,9 +79,10 @@
                     <p class="tech-stack">FastAPI, React, Redis, PostgreSQL, Docker</p>
                     <ul>
                         <li>Developed a FastAPI API Gateway with key authentication, response caching, and rate limiting.</li>
-                        <li>Implemented a Redis-based sliding window rate limiter and high-speed cache to reduce API latency.</li>
-                        <li>Built a non-blocking, asynchronous logging system using a Redis buffer and background worker.</li>
-                        <li>Designed a real-time analytics dashboard using React and WebSockets to display live metrics.</li>
+                        <li>Implemented a Redis sliding window rate limiter and response cache to minimize API latency.</li>
+                        <li>Built an async logging system with a Redis buffer and background worker to prevent I/O blocking.</li>
+                        <li>Designed a real-time analytics dashboard in React using WebSockets for live metrics.</li>
+                        <li>Containerized the application stack for deployment using Docker Compose.</li>
                     </ul>
                 </div>
                 <div class="project-video">
@@ -69,9 +95,11 @@
                     <h3>King's Gambit <a href="https://github.com/BhaveshKukreja29/KingsGambit" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
                     <p class="tech-stack">React, Django, WebRTC, Docker, PostgreSQL, Redis</p>
                     <ul>
-                        <li>Developed a full-stack real-time chess platform with a React frontend and Django backend.</li>
-                        <li>Implemented WebSocket-based gameplay using Django Channels with Redis for message brokering.</li>
-                        <li>Integrated WebRTC video calling via PeerJS for peer-to-peer communication, reducing server bandwidth.</li>
+                        <li>Developed a full-stack, real-time chess platform using React, Django, and PostgreSQL.</li>
+                        <li>Used Django Channels and Redis to implement WebSocket-based real-time gameplay.</li>
+                        <li>Integrated WebRTC video chat using PeerJS for P2P communication to reduce server bandwidth.</li>
+                        <li>Designed a multi-service architecture and containerized the application with Docker Compose.</li>
+                        <li>Implemented security features including authentication, CSRF protection, and API rate-limiting.</li>
                     </ul>
                 </div>
                 <div class="project-video">
@@ -84,9 +112,9 @@
                     <h3>PaperPal <a href="https://github.com/BhaveshKukreja29/paperpal" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
                     <p class="tech-stack">Python, Gemini API</p>
                     <ul>
-                        <li>Built a CLI research assistant with multi-format document processing (PDF, DOCX, TXT).</li>
-                        <li>Integrated Gemini API for AI-powered document summarization and interactive Q&A capabilities.</li>
-                        <li>Implemented error handling and optimized text parsing using various Python libraries.</li>
+                        <li>Developed a CLI tool for parsing and extracting text from multiple document formats.</li>
+                        <li>Integrated the Gemini API to enable document summarization and interactive Q&A.</li>
+                        <li>Used pymupdf and python-docx for multi-format text extraction and implemented error handling.</li>
                     </ul>
                 </div>
                 <div class="project-video">
@@ -116,7 +144,7 @@
             <div class="skills-container">
                 <div class="skill-category">
                     <h3>Languages</h3>
-                    <p>Python, C, JavaScript</p>
+                    <p>Python, C, JavaScript, Go</p>
                 </div>
                 <div class="skill-category">
                     <h3>Backend</h3>
@@ -128,13 +156,21 @@
                 </div>
                 <div class="skill-category">
                     <h3>Databases</h3>
-                    <p>PostgreSQL, SQLite, Redis, Alembic</p>
+                    <p>PostgreSQL, MySQL, SQLite, Redis</p>
                 </div>
                 <div class="skill-category">
                     <h3>Tools</h3>
-                    <p>Docker, Git, WebRTC, PeerJS, Vite</p>
+                    <p>Docker, Alembic, WebRTC, PeerJS, Git, GitHub</p>
                 </div>
             </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul class="certifications-list">
+                <li><a href="https://certificates.cs50.io/c678b0c4-8fba-4c6f-884c-36fc54ad5494.pdf" target="_blank">Harvard CS50x – Introduction to Computer Science</a></li>
+                <li><a href="https://certificates.cs50.io/467d4cfa-0397-4a54-9b0f-4baf11609d83.pdf" target="_blank">Harvard CS50P – Introduction to Programming with Python</a></li>
+            </ul>
         </section>
 
     </main>

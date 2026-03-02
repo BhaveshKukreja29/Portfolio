@@ -281,6 +281,50 @@ a:hover {
     font-weight: bold;
 }
 
+/* Experience Section */
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    color: #888;
+    white-space: nowrap;
+}
+
+.experience-company {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+
+.experience-item ul li {
+    margin-bottom: 0.25rem;
+}
+
+/* Certifications Section */
+.certifications-list {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+
+.certifications-list li {
+    margin-bottom: 0.25rem;
+}
+
 @media (max-width: 768px) {
     header {
         padding: 0.8rem 1rem;
