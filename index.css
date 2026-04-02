@@ -307,8 +307,12 @@ a:hover {
 }
 
 .experience-company a {
-    text-decoration: underline;
     color: var(--heading-color);
+    text-decoration: none;
+}
+
+.experience-company a:hover {
+    text-decoration: underline;
 }
 
 .experience-item ul {
