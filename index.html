@@ -58,7 +58,22 @@
             <h2>Experience</h2>
             <div class="experience-item">
                 <div class="experience-header">
-                    <h3>Backend Engineering Intern (Python)</h3>
+                    <h3>Full Stack Engineering Intern</h3>
+                    <span class="experience-date">June 2026 – Present</span>
+                </div>
+                <p class="experience-company">
+    			<a href="https://zobyt.com" target="_blank" rel="noopener noreferrer">Zobyt</a> · Remote
+		</p>
+                <ul>
+                    <li>Built a multi-step checkout and pre-ordering flow in React, decoupling state and API calls from the UI.</li>
+                    <li>Integrated Razorpay payments with idempotent webhooks to dedupe retries and prevent double-charges.</li>
+                    <li>Added a reconciliation sweep and refund state machine to fix orders left inconsistent by lost webhooks.</li>
+                    <li>Hardened the ordering flow against edge cases: cart rehydration, submit idempotency, and error states.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Backend Engineering Intern</h3>
                     <span class="experience-date">December 2025 – February 2026</span>
                 </div>
                 <p class="experience-company">
@@ -66,10 +81,9 @@
 		</p>
                 <ul>
                     <li>Built a newsletter scheduling API in FastAPI with recurring tasks, user rate limits, and error rollback.</li>
-                    <li>Reduced a data-sync script's runtime from 45 minutes to 4 by fixing N+1 API calls with metadata pre-fetching.</li>
+                    <li>Reduced a data-sync script's runtime by 11x by fixing N+1 API calls with metadata pre-fetching.</li>
                     <li>Resolved a PostgreSQL connection leak by refactoring the application's database session handling.</li>
                     <li>Fixed a scheduler bug bypassing rate limits by correcting a data model serialization error.</li>
-                    <li>Improved CI/CD stability by refactoring flaky tests with deterministic database queries in the Pytest suite.</li>
                 </ul>
             </div>
         </section>
@@ -112,16 +126,14 @@
 
             <div class="project-item">
                 <div class="project-description">
-                    <h3>PaperPal <a href="https://github.com/BhaveshKukreja29/paperpal" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
-                    <p class="tech-stack">Python, Gemini API</p>
+                    <h3>AutoTriage <a href="https://github.com/BhaveshKukreja29/AutoTriage" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+                    <p class="tech-stack">Python, FAISS, Gemini API, Ollama, Pydantic</p>
                     <ul>
-                        <li>Developed a CLI tool for parsing and extracting text from multiple document formats.</li>
-                        <li>Integrated the Gemini API to enable document summarization and interactive Q&A.</li>
-                        <li>Used pymupdf and python-docx for multi-format text extraction and implemented error handling.</li>
+                        <li>Built a terminal-based RAG pipeline to route, classify, and answer support tickets across 3 product domains.</li>
+                        <li>Implemented regex pre-routing to bypass the LLM entirely for adversarial and out-of-scope tickets.</li>
+                        <li>Enforced structured output with Pydantic and prevented prompt injection using XML-sandboxed inputs.</li>
+                        <li>Supported Gemini 2.5 Flash and Qwen 2.5 via Ollama with defensive JSON parsing.</li>
                     </ul>
-                </div>
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/8gvPNIu5Vyc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -147,7 +159,7 @@
             <div class="skills-container">
                 <div class="skill-category">
                     <h3>Languages</h3>
-                    <p>Python, C, JavaScript, Go</p>
+                    <p>Python, C, JavaScript</p>
                 </div>
                 <div class="skill-category">
                     <h3>Backend</h3>
@@ -173,6 +185,7 @@
             <ul class="certifications-list">
                 <li><a href="https://certificates.cs50.io/c678b0c4-8fba-4c6f-884c-36fc54ad5494.pdf" target="_blank">Harvard CS50x – Introduction to Computer Science</a></li>
                 <li><a href="https://certificates.cs50.io/467d4cfa-0397-4a54-9b0f-4baf11609d83.pdf" target="_blank">Harvard CS50P – Introduction to Programming with Python</a></li>
+                <li><a href="https://www.udemy.com/certificate/UC-7536936b-52f3-4550-b824-ce9543707ac7/" target="_blank">Fundamentals of Backend Engineering</a></li>
             </ul>
         </section>
 
