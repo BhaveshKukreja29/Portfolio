@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavesh Kukreja - Portfolio</title>
-    <meta name="description" content="Bhavesh Kukreja – Backend Engineer, CS Undergrad, open-source contributor.">
+    <meta name="description" content="Bhavesh Kukreja – Full-stack engineer who builds AI systems: RAG pipelines, payment flows, and developer tooling.">
     <meta property="og:title" content="Bhavesh Kukreja – Portfolio">
-    <meta property="og:description" content="Backend Engineer, CS Undergrad, open-source contributor.">
+    <meta property="og:description" content="Full-stack engineer who builds AI systems: RAG pipelines, payment flows, and developer tooling.">
     <meta property="og:image" content="bhavesh.jpg">
     <meta property="og:type" content="website">
     <link rel="icon" href="bhavesh.ico">
@@ -92,6 +92,18 @@
             <h2>Projects</h2>
             <div class="project-item">
                 <div class="project-description">
+                    <h3>Attune <a href="https://github.com/BhaveshKukreja29/attune" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+                    <p class="tech-stack">Python, Sentence-Transformers, BM25, Groq, Whisper, Tesseract</p>
+                    <ul>
+                        <li>Built a personalized RAG notification router (notify/digest/mute) over multimodal messages, ranked top 11% (213/1983) in HackerRank Orchestrate.</li>
+                        <li>Engineered hybrid retrieval (BM25 + e5 dense embeddings fused via Reciprocal Rank Fusion) over each user's reaction history.</li>
+                        <li>Blocked prompt injection and scam phishing with a deterministic safety gate the LLM cannot override.</li>
+                        <li>Read voice notes and image posters locally via Whisper and Tesseract, with confidence calibrated against labeled samples.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-description">
                     <h3>Rexus <a href="https://github.com/BhaveshKukreja29/rexus" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
                     <p class="tech-stack">FastAPI, React, Redis, PostgreSQL, Docker</p>
                     <ul>
@@ -159,7 +171,11 @@
             <div class="skills-container">
                 <div class="skill-category">
                     <h3>Languages</h3>
-                    <p>Python, C, JavaScript</p>
+                    <p>Python, C, JavaScript, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>AI Engineering</h3>
+                    <p>RAG, FAISS, BM25, Whisper, Tesseract</p>
                 </div>
                 <div class="skill-category">
                     <h3>Backend</h3>
@@ -167,15 +183,15 @@
                 </div>
                 <div class="skill-category">
                     <h3>Frontend</h3>
-                    <p>React, HTML, CSS</p>
+                    <p>React, HTML, CSS, Tailwind</p>
                 </div>
                 <div class="skill-category">
                     <h3>Databases</h3>
-                    <p>PostgreSQL, MySQL, SQLite, Redis</p>
+                    <p>PostgreSQL, Redis, MySQL, SQLite</p>
                 </div>
                 <div class="skill-category">
                     <h3>Tools</h3>
-                    <p>Docker, Alembic, WebRTC, PeerJS, Git, GitHub</p>
+                    <p>Docker, Alembic, Pytest, WebRTC, PeerJS, Git, GitHub, Razorpay, Supabase</p>
                 </div>
             </div>
         </section>
