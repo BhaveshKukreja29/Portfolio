@@ -81,9 +81,9 @@
 		</p>
                 <ul>
                     <li>Built a newsletter scheduling API in FastAPI with recurring tasks, user rate limits, and error rollback.</li>
-                    <li>Reduced a data-sync script's runtime by 11x by fixing N+1 API calls with metadata pre-fetching.</li>
+                    <li>Reduced a data sync script's runtime by 11x by fixing N+1 API calls with metadata pre-fetching.</li>
                     <li>Resolved a PostgreSQL connection leak by refactoring the application's database session handling.</li>
-                    <li>Fixed a scheduler bug bypassing rate limits by correcting a data model serialization error.</li>
+                    <li>Fixed a serialization bug that bypassed the configured 3 per day rate limit, restoring enforcement.</li>
                 </ul>
             </div>
         </section>
@@ -100,11 +100,10 @@
                     <h3>Rexus <a href="https://github.com/BhaveshKukreja29/rexus" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
                     <p class="tech-stack">FastAPI, React, Redis, PostgreSQL, Docker</p>
                     <ul>
-                        <li>Developed a FastAPI API Gateway with key authentication, response caching, and rate limiting.</li>
-                        <li>Implemented a Redis sliding window rate limiter and response cache to minimize API latency.</li>
-                        <li>Built an async logging system with a Redis buffer and background worker to prevent I/O blocking.</li>
-                        <li>Designed a real-time analytics dashboard in React using WebSockets for live metrics.</li>
-                        <li>Containerized the application stack for deployment using Docker Compose.</li>
+                        <li>Developed an API Gateway in FastAPI with key authentication, response caching, and rate limiting</li>
+                        <li>Built a distributed sliding window rate limiter on Redis sorted sets with atomic per key enforcement</li>
+                        <li>Cut response latency 95% by caching GET responses and API key lookups in Redis</li>
+                        <li>Offloaded request logging to a Redis buffer and worker, streamed live to a WebSocket dashboard</li>
                     </ul>
                 </div>
                 <div class="project-video">
@@ -117,11 +116,10 @@
                     <h3>King's Gambit <a href="https://github.com/BhaveshKukreja29/KingsGambit" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
                     <p class="tech-stack">React, Django, WebRTC, Docker, PostgreSQL, Redis</p>
                     <ul>
-                        <li>Developed a full-stack, real-time chess platform using React, Django, and PostgreSQL.</li>
-                        <li>Used Django Channels and Redis to implement WebSocket-based real-time gameplay.</li>
-                        <li>Integrated WebRTC video chat using PeerJS for P2P communication to reduce server bandwidth.</li>
-                        <li>Designed a multi-service architecture and containerized the application with Docker Compose.</li>
-                        <li>Implemented security features including authentication, CSRF protection, and API rate-limiting.</li>
+                        <li>Developed a full stack, room based chess platform using React, Django, and PostgreSQL</li>
+                        <li>Used Django Channels and Redis to implement WebSocket based real time gameplay</li>
+                        <li>Integrated WebRTC video chat using PeerJS for P2P communication to reduce server bandwidth</li>
+                        <li>Designed a multi-service architecture and containerized the application with Docker Compose</li>
                     </ul>
                 </div>
                 <div class="project-video">
@@ -134,8 +132,8 @@
                     <h3>AutoTriage <a href="https://github.com/BhaveshKukreja29/AutoTriage" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
                     <p class="tech-stack">Python, FAISS, Gemini API, Ollama, Pydantic</p>
                     <ul>
-                        <li>Built a terminal-based RAG pipeline to route, classify, and answer support tickets across 3 product domains.</li>
-                        <li>Implemented regex pre-routing to bypass the LLM entirely for adversarial and out-of-scope tickets.</li>
+                        <li>Built a terminal based RAG pipeline to route, classify, and answer support tickets across 3 product domains.</li>
+                        <li>Implemented regex pre-routing to bypass the LLM entirely for adversarial and out of scope tickets.</li>
                         <li>Enforced structured output with Pydantic and prevented prompt injection using XML-sandboxed inputs.</li>
                         <li>Supported Gemini 2.5 Flash and Qwen 2.5 via Ollama with defensive JSON parsing.</li>
                     </ul>
