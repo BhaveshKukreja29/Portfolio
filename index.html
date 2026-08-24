@@ -65,10 +65,10 @@
     			<a href="https://zobyt.com" target="_blank" rel="noopener noreferrer">Zobyt</a> · Remote
 		</p>
                 <ul>
-                    <li>Built a multi-step checkout and pre-ordering flow in React, decoupling state and API calls from the UI.</li>
-                    <li>Integrated Razorpay payments with idempotent webhooks to dedupe retries and prevent double-charges.</li>
-                    <li>Added a reconciliation sweep and refund state machine to fix orders left inconsistent by lost webhooks.</li>
-                    <li>Hardened the ordering flow against edge cases: cart rehydration, submit idempotency, and error states.</li>
+                    <li>Built an e-commerce ordering flow in React and FastAPI with checkout, payments, and order tracking.</li>
+                    <li>Integrated Razorpay payments with idempotent webhooks to dedupe retries and prevent double charges.</li>
+                    <li>Designed a refund state machine and reconciliation sweep to fix orders left inconsistent by lost webhooks.</li>
+                    <li>Enabled vendors to accept or reject orders over a two way WhatsApp loop, updating order state.</li>
                 </ul>
             </div>
             <div class="experience-item">
