@@ -151,13 +151,21 @@ a:hover {
 .social-links a {
     font-size: 1.25rem;
     transition: transform 0.2s ease;
-    display: inline-flex; /* Add this */
+    display: inline-flex;
     align-items: center;
 }
 
 .social-links a:hover {
     transform: translateY(-2px);
     text-decoration: none;
+}
+
+.icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: currentColor;
+    display: block;
+    flex-shrink: 0;
 }
 
 .svg-icon {
@@ -221,6 +229,11 @@ a:hover {
     text-decoration: none;
 }
 
+.project-description .github-link .icon {
+    width: 1rem;
+    height: 1rem;
+}
+
 .project-description .github-link:hover {
     text-decoration: none;
     color: var(--heading-color);
@@ -245,16 +258,60 @@ a:hover {
     overflow: hidden;
 }
 
-.project-video iframe {
+.project-video iframe,
+.video-facade {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
     border-radius: 8px;
 }
 
-.project-card .tech-stack {
+.video-facade {
+    padding: 0;
+    cursor: pointer;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-facade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 68px;
+    height: 48px;
+    transform: translate(-50%, -50%);
+    background: #f00;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.play-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 10px 0 10px 18px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.video-facade:hover .play-btn,
+.video-facade:focus-visible .play-btn {
+    background: #c00;
+}
+
+.tech-stack {
     font-style: italic;
     font-size: 0.9rem;
     color: #888;
@@ -284,6 +341,32 @@ a:hover {
 /* Experience Section */
 .experience-item {
     margin-bottom: 1.5rem;
+}
+
+.experience-body {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experience-body ul {
+    flex: 1;
+    min-width: 0;
+}
+
+.experience-logo {
+    flex: 0 0 auto;
+}
+
+.experience-logo a:hover {
+    text-decoration: none;
+}
+
+.experience-logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    transform: translate(-10%, -10%);
 }
 
 .experience-header {
@@ -395,6 +478,13 @@ a:hover {
     }
     .project-video {
         padding-bottom: 56.25%;
+    }
+    .experience-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experience-logo img {
+        width: 96px;
     }
 
     .skill-category {
