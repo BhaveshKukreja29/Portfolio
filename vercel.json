@@ -1,17 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.bhavesh.codes"
-        }
-      ],
-      "destination": "https://bhavesh.codes/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/Bhavesh_Kukreja_Resume.pdf",
