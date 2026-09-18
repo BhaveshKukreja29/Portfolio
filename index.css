@@ -250,8 +250,8 @@ a:hover {
 }
 
 .project-video {
-    flex: 1;
-    min-width: 300px;
+    flex: 0.85;
+    min-width: 280px;
     position: relative;
     padding-bottom: 28%;
     height: 0;
@@ -436,12 +436,8 @@ a:hover {
     .project-video {
         padding-bottom: 56.25%;
     }
-    .experience-body {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .experience-logo img {
-        width: 96px;
+    .experience-logo {
+        display: none;
     }
 
     .skill-category {
